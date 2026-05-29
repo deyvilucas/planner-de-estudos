@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner de Estudos</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Planner de Estudos</h1>
+        <form class="task-form">
+            <h2>Adicionar Tarefas</h2>
+
+            <div class="form-group"> 
+                <label for="task-title">Título:</label>
+                <input type="text" name="task-title" id="task-title">
+            </div>
+
+            <div class="form-group">
+                <label for="task-category">Categoria:</label>
+                <select name="task-category" id="task-category">
+                <option value="">Escolha uma Categoria:</option>
+                <option value="programming">Programação</option>
+                <option value="college">Faculdade</option>
+                <option value="work">Trabalho</option>
+                <option value="personal">Pessoal</option>
+                <option value="health">Saúde</option>
+                <option value="finances">Finanças</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="task-priority">Prioridade:</label>
+                <select name="task-priority" id="task-priority">
+                <option value="">Escolha a Prioridade:</option>
+                <option value="high">Alta</option>
+                <option value="medium">Média</option>
+                <option value="low">Baixa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="task-date">Prazo:</label>
+                <input type="date" name="task-date" id="task-date">
+            </div>
+
+            <button type="submit" id="add-btn">Adicionar Tarefa</button>
+        </form>
+        
+        
+        <section class="tasks-header">
+            <h2>Lista de Tarefas</h2>
+
+            <div class="filter-buttons">
+                <button type="button"  id="all-btn">Todas</button>
+                <button type="button" id="pending-btn">Pendentes</button>
+                <button type="button" id="completed-btn">Concluídas</button>
+            </div>
+        </section>
+     
+
+        <section class="tasks-section">
+            <ul id="tasks-list"></ul>
+        </section>
+
+        <section class="counters">
+            <span id="pending-count">Pendentes: 0</span>
+            <span id="completed-count">Concluídas: 0</span>
+        </section>
+       
+        
+    </main>
+</body>
+</html>
