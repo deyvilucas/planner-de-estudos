@@ -45,6 +45,44 @@ body {
     gap: 0.5rem;
 }
 
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input, 
+select {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(175, 173, 173);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#add-btn {
+    background-color: rgb(223, 223, 223);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-btn:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid rgb(80, 80, 80);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
 .completed {
     text-decoration: line-through;
     opacity: 0.7;
