@@ -51,6 +51,12 @@ function renderTasks(tasksToRender) {
         completeButton.innerText = 'Concluir'
         const removeButton = document.createElement('button')
         removeButton.innerText = 'Excluir'
+        completeButton.classList.add('btn', 'btn-complete')
+        removeButton.classList.add('btn', 'btn-remove')
+        const buttonContainer = document.createElement('div')
+        buttonContainer.classList.add('task-actions')
+        buttonContainer.appendChild(completeButton)
+        buttonContainer.appendChild(removeButton)
 
         completeButton.addEventListener('click', function() {
             if(task.status === 'pending') {
@@ -79,8 +85,8 @@ function renderTasks(tasksToRender) {
         })
 
         tasksList.appendChild(listItem)
-        listItem.appendChild(completeButton)
-        listItem.appendChild(removeButton)
+        listItem.appendChild(buttonContainer)
+
         
         
 

@@ -83,6 +83,36 @@ select:focus {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
+#tasks-list li {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.253);
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    
+}
+
+.btn-complete {
+    background-color:  rgb(223, 223, 223);
+}
+
+.btn-remove {
+    background-color: rgb(190, 190, 190);
+}
+
+.task-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
 .completed {
     text-decoration: line-through;
     opacity: 0.7;
