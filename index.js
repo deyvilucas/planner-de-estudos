@@ -214,8 +214,6 @@ addButton.addEventListener('click', function() {
         taskCategory.value = ''
         taskPriority.value = ''
         taskDate.value = ''
-
-
 }
 })
 
@@ -233,5 +231,4 @@ filterButtons.forEach(button => {
     })
 
 })
-
 
