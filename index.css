@@ -76,6 +76,11 @@ label {
     background-color: rgb(190, 190, 190);
 }
 
+#add-btn:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.30);
+}
+
 input:focus,
 select:focus {
     outline: none;
@@ -96,15 +101,29 @@ select:focus {
     padding: 0.7rem;
     border-radius: 0.5rem;
     border: none;
-    
+    transition: background-color 0.2s;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.30);
 }
 
 .btn-complete {
     background-color:  rgb(223, 223, 223);
+
 }
 
 .btn-remove {
     background-color: rgb(190, 190, 190);
+}
+
+.btn-complete:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.btn-remove:hover {
+    background-color: rgb(170, 170, 170);
 }
 
 .task-actions {
@@ -117,3 +136,5 @@ select:focus {
     text-decoration: line-through;
     opacity: 0.7;
 }
+
+/*Adicionar Depois :focus e :hover nos botões de adicionar e remover tarefa*/
