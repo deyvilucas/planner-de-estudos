@@ -28,7 +28,11 @@ Permite adicionar, concluir, excluir e filtrar tarefas por status.
 #Preview
 
 ## Desktop
-![Desktop](assets/desktop.png)
+<p align="center">
+<img src="assets/desktop.png" width="600px">
+</p>
 
 ## Mobile
-![Mobile](assets/mobile.jpg)
+<p align="center">
+<img src="assets/mobile.jpg" width="300px">
+</p>
