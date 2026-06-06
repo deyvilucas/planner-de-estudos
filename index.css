@@ -17,6 +17,15 @@ body {
     padding: 2rem;
 }
 
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.task-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 .task-form {
     background-color: white;
     border-radius: 0.5rem;
@@ -26,10 +35,14 @@ body {
 }
 
 .tasks-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
 
 .tasks-section {
@@ -146,7 +159,7 @@ select:focus {
 }
 
 .filter-btn.active {
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(170, 170, 170);
 }
 
 .task-actions {
@@ -161,4 +174,16 @@ select:focus {
     opacity: 0.7;
 }
 
-/*Adicionar Depois :focus e :hover nos botões de adicionar e remover tarefa*/
+.counters {
+    display: flex;
+    gap: 1rem;
+}
+
+.counter {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
