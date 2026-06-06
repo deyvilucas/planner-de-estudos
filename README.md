@@ -1,18 +1,34 @@
 # Planner de Estudos
 
-Projeto desenvolvido com HTML, CSS e JavaScript para gerenciamento de tarefas de estudo.
+Aplicação web para gerenciamento de tarefas com filtros, contadores e armazenamento local.
+
+Permite adicionar, concluir, excluir e filtrar tarefas por status.
 
 ## Funcionalidades
 
 - Adicionar tarefas
-- Excluir tarefas
-- Marcar tarefas como concluídas
-- Filtrar tarefas
+- Remover tarefas
+- Marcar como concluída
+- Filtros (todas, pendentes, concluídas)
 - Contadores de tarefas
-- Persistência de dados com LocalStorage
+- Salvamento no localStorage
+- Interface responsiva
 
 ## Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript
+
+## Como usar
+1. Clone o repositório
+2. Abra o arquivo index.html no navegador
+3. Comece a adicionar tarefas
+
+#Preview
+
+## Desktop
+![Desktop](assets/desktop.png)
+
+## Mobile
+![Mobile](assets/mobile.jpg)

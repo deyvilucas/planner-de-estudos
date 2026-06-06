@@ -176,7 +176,8 @@ select:focus {
 
 .counters {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .counter {
@@ -187,3 +188,31 @@ select:focus {
     font-weight: 600;
 }
 
+@media (max-width: 760px) {
+   
+    .container {
+        padding: 0.6rem;
+        width: 100%;
+    }
+
+    .tasks-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tasks-header h2 {
+        margin-bottom: 1rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+    }
+    .task-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+}
