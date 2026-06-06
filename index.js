@@ -6,11 +6,9 @@ const taskPriority = document.getElementById('task-priority')
 const taskDate = document.getElementById('task-date')
 const addButton = document.getElementById('add-btn')
 const tasksList = document.getElementById('tasks-list')
-const allButton = document.getElementById('all-btn')
-const pendingButton = document.getElementById('pending-btn')
-const completedButton = document.getElementById('completed-btn')
 const pendingCount = document.getElementById('pending-count')
 const completedCount = document.getElementById('completed-count')
+const filterButtons = document.querySelectorAll('.filter-btn')
 
 function saveTasks() {
     localStorage.setItem(
@@ -221,20 +219,19 @@ addButton.addEventListener('click', function() {
 }
 })
 
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => {
+            btn.classList.remove('active')
+        })
 
-allButton.addEventListener('click', function() {
-    currentFilter = 'all'
-    refreshApp()
-})
+        button.classList.add('active')
 
-pendingButton.addEventListener('click', function() {
-    currentFilter = 'pending'
-    refreshApp()
-})
+        currentFilter = button.dataset.status
 
-completedButton.addEventListener('click', function() {
-    currentFilter = 'completed'
-    refreshApp()
+        refreshApp()
+    })
 
 })
+
 

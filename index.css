@@ -126,10 +126,34 @@ select:focus {
     background-color: rgb(170, 170, 170);
 }
 
+.filter-btn {
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.253);
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.filter-btn:focus {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.253);
+    outline: none;
+}
+
+.filter-btn.active {
+    background-color: rgb(59, 59, 59);
+}
+
 .task-actions {
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
+    
 }
 
 .completed {
