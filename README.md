@@ -25,7 +25,7 @@ Permite adicionar, concluir, excluir e filtrar tarefas por status.
 2. Abra o arquivo index.html no navegador
 3. Comece a adicionar tarefas
 
-#Preview
+## Preview
 
 ## Desktop
 <p align="center">
